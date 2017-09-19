@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>gpi restserver</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Use this form to trigger process that is waiting at message event.</div>
+        <form target="_self"
+            enctype="application/x-www-form-urlencoded" method="post"
+            action="order_delivered" name="order_delivered">
+             <table style="text-align: left; width: 100%;" border="1"
+            cellpadding="2" cellspacing="2">
+               <tbody>
+                 <tr>
+                   <td>orderId</td>
+                   <td><input name="orderId"></td>
+                 </tr>
+                 <tr>
+                   <td>messageName</td>
+                   <td><input name="messageName"
+            value="order_delivered"></td>
+                 </tr>
+               </tbody>
+             </table>
+             <button value="order_delivered" name="send"></button><br>
+        </form>
+
+    </body>
+</html>
